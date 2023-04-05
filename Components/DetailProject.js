@@ -22,7 +22,7 @@ export default function DetailProject({
       variants={
         fromLeft
           ? fromLeftAnimation
-          : width < 768
+          : width < 1001
           ? fromRightAnimation
           : fromLeftAnimation
       }
