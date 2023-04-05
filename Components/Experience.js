@@ -6,7 +6,6 @@ export default function Experience() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["end", "start"],
   });
 
   return (
