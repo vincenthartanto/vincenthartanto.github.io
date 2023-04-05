@@ -19,13 +19,7 @@ export default function DetailProject({
   console.log(width);
   return (
     <motion.div
-      variants={
-        fromLeft
-          ? fromLeftAnimation
-          : width < 1001
-          ? fromRightAnimation
-          : fromLeftAnimation
-      }
+      variants={fromLeftAnimation}
       initial="initial"
       whileInView="whileInView"
       viewport="viewport"

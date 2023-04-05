@@ -9,7 +9,7 @@ export default function Details({ title, subtitle, description, place }) {
   const width = useWindow();
   return (
     <motion.div
-      variants={width < 1001 ? fromLeftAnimation : fromRightAnimation}
+      variants={fromLeftAnimation}
       initial="initial"
       whileInView="whileInView"
       className="w-full md:w-[50%] m-8"
