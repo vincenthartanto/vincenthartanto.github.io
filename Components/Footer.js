@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { fromBottomAnimation } from "@/Animation/AnimationList";
 export default function Footer() {
   return (
-    <footer className="">
-      <div className="grid place-items-center h-[30vh]">
+    <footer className="space-y-8">
+      <div className="grid place-items-center ">
         <motion.div
           variants={fromBottomAnimation}
           initial="initial"

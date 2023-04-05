@@ -39,7 +39,7 @@ export default function Header() {
       >
         <motion.img
           variants={image()}
-          className="w-[20rem] min-h-[100%] rounded-full"
+          className="w-[10rem] sm:w-[15rem] md:w-[20rem] lg:w-[25rem] min-h-[100%] rounded-full"
           src={Vincent.src}
           alt="vincent"
         ></motion.img>
