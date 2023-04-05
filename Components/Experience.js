@@ -2,10 +2,13 @@ import React, { useRef } from "react";
 import Details from "./Details";
 import LineYear from "./LineYear";
 import { motion, useScroll } from "framer-motion";
+import useWindow from "@/Hooks/useWindow";
 export default function Experience() {
   const ref = useRef(null);
+  const width = useWindow();
   const { scrollYProgress } = useScroll({
     target: ref,
+    offset: width < 786 ? ["end", "start"] : [],
   });
 
   return (
