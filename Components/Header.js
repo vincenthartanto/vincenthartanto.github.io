@@ -9,6 +9,7 @@ import {
   imageWrapper,
   staggerContainer,
 } from "@/Animation/AnimationList";
+import useWindow from "@/Hooks/useWindow";
 export default function Header() {
   return (
     <motion.header

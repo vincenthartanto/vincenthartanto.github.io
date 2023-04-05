@@ -1,6 +1,7 @@
 import React from "react";
 import MinimalistButton from "./MinimalistButton";
 import Image from "next/image";
+import useWindow from "@/Hooks/useWindow";
 import { motion } from "framer-motion";
 import {
   fromLeftAnimation,
@@ -14,9 +15,16 @@ export default function DetailProject({
   SecondTech,
   fromLeft,
 }) {
+  const width = useWindow();
   return (
     <motion.div
-      variants={fromLeft ? fromLeftAnimation : fromRightAnimation}
+      variants={
+        fromLeft
+          ? fromLeftAnimation
+          : width < 768
+          ? fromRightAnimation
+          : fromLeftAnimation
+      }
       initial="initial"
       whileInView="whileInView"
       viewport="viewport"
