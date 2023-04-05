@@ -16,6 +16,7 @@ export default function DetailProject({
   fromLeft,
 }) {
   const width = useWindow();
+  console.log(width);
   return (
     <motion.div
       variants={

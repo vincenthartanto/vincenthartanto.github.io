@@ -1,10 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { fromRightAnimation } from "@/Animation/AnimationList";
+import {
+  fromRightAnimation,
+  fromLeftAnimation,
+} from "@/Animation/AnimationList";
+import useWindow from "@/Hooks/useWindow";
 export default function Details({ title, subtitle, description, place }) {
+  const width = useWindow();
   return (
     <motion.div
-      variants={fromRightAnimation}
+      variants={width < 768 ? fromLeftAnimation : fromRightAnimation}
       initial="initial"
       whileInView="whileInView"
       className="w-full md:w-[50%] m-8"
