@@ -8,7 +8,12 @@ export default function Experience() {
   const width = useWindow();
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["end end", "start start"],
+    offset: ["center", "start"],
+  });
+
+  const mobile = useScroll({
+    target: ref,
+    offset: ["center", "end"],
   });
 
   return (
@@ -16,19 +21,16 @@ export default function Experience() {
       <h3 className="text-center">Experience</h3>
       <div className="flex justify-around items-center relative space-x-4">
         <motion.div
-          style={{ scaleY: scrollYProgress }}
+          style={{
+            scaleY: width > 768 ? scrollYProgress : mobile.scrollYProgress,
+          }}
           className=" origin-top w-[4px] bg-green-500 absolute -left-0 md:left-[25%] h-[80%]  mt-4"
         >
           {" "}
         </motion.div>
         <div className="md:flex md:flex-col md:p-20 h-full md:items-center justify-center ">
           <div className="flex md:w-[50vw] items-center relative">
-            <LineYear
-              scrollYProgress={scrollYProgress}
-              ref={ref}
-              year={"1"}
-              sup={"st"}
-            ></LineYear>
+            <LineYear year={"1"} sup={"st"}></LineYear>
             <Details
               title={" Fullstack Developer"}
               place={" @Accelist Lentera Indonesia"}
@@ -39,12 +41,7 @@ export default function Experience() {
             ></Details>
           </div>
           <div className="flex md:w-[50vw] items-center">
-            <LineYear
-              scrollYProgress={scrollYProgress}
-              ref={ref}
-              year={"2"}
-              sup={"nd"}
-            ></LineYear>
+            <LineYear year={"2"} sup={"nd"}></LineYear>
             <Details
               title={" IT Support and Fullstack Developer"}
               place={" @Accelist Lentera Indonesia"}
@@ -55,12 +52,7 @@ export default function Experience() {
             ></Details>
           </div>
           <div className="flex md:w-[50vw] items-center">
-            <LineYear
-              scrollYProgress={scrollYProgress}
-              ref={ref}
-              year={"3"}
-              sup={"rd"}
-            ></LineYear>
+            <LineYear year={"3"} sup={"rd"}></LineYear>
             <Details
               title={"Frontend Developer "}
               place={"@?"}
