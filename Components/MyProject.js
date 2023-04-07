@@ -10,6 +10,7 @@ export default function MyProject() {
       <h3 className="text-center">My Project</h3>
       <div className="md:flex md:justify-around">
         <DetailProject
+          linkPage="https://kanban-web-bxebbh3hp-vincenthartanto.vercel.app/"
           img={KanbanProject}
           title={"Kanban Web App"}
           description={
@@ -20,6 +21,7 @@ export default function MyProject() {
           fromLeft={true}
         ></DetailProject>
         <DetailProject
+          linkPage=""
           img={Audiophile}
           title={"Audiophiles"}
           description={

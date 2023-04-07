@@ -14,9 +14,9 @@ export default function DetailProject({
   firstTech,
   SecondTech,
   fromLeft,
+  linkPage,
 }) {
   const width = useWindow();
-  console.log(width);
   return (
     <motion.div
       variants={fromLeftAnimation}
@@ -35,7 +35,9 @@ export default function DetailProject({
         &nbsp; and &nbsp;
         <span className="text-cyan-800 font-bold underline">{SecondTech}</span>
       </p>
-      <MinimalistButton title={"SEE IT LIVE"}></MinimalistButton>
+      <a href={linkPage} target="_blank">
+        <MinimalistButton title={"SEE IT LIVE"}></MinimalistButton>
+      </a>
     </motion.div>
   );
 }
