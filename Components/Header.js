@@ -20,13 +20,13 @@ export default function Header() {
       <div className="flex justify-between space-x-4">
         <motion.div variants={fadeIn("down")}>
           <DescriptionAboutMe
-            title="+2 YEARS EXPERIENCE AS DEVELOPER"
+            title="EXPERIENCE AS DEVELOPER"
             style={""}
           ></DescriptionAboutMe>
         </motion.div>
         <motion.div variants={fadeIn("down")}>
           <DescriptionAboutMe
-            title="LOVE BUILDING S WEBSITES"
+            title="LOVE BUILDING STUNNING WEBSITES"
             style={"text-right"}
           ></DescriptionAboutMe>
         </motion.div>
@@ -39,7 +39,7 @@ export default function Header() {
       >
         <motion.img
           variants={image()}
-          className="w-[5rem] sm:w-[10rem] md:[12rem] lg:[15rem] min-h-[100%] rounded-full"
+          className="w-[40%] sm:w-[10rem] md:[12rem] lg:[15rem] min-h-[100%] rounded-full"
           src={Vincent.src}
           alt="vincent"
         ></motion.img>
@@ -66,7 +66,7 @@ export default function Header() {
             style={""}
           ></DescriptionAboutMe>
         </motion.div>
-        <motion.div variants={fadeIn("up")}>
+        <motion.div className="text-right" variants={fadeIn("up")}>
           <DescriptionAboutMe
             title="INTO REALITY WITH CODE"
             style={""}
