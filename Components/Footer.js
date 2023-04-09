@@ -13,8 +13,10 @@ export default function Footer() {
           viewport={"viewport"}
           className="space-y-8 grid place-items-center"
         >
-          <h1 className="text-center">Interested on hiring me ?</h1>
-          <MinimalistButton title={"EMAIL ME"}></MinimalistButton>
+          <h1 className="text-center">Let's make a great app with me</h1>
+          <a href="mailto:vincenthartanto.work@gmail.com">
+            <MinimalistButton title={"EMAIL ME"}></MinimalistButton>
+          </a>
         </motion.div>
       </div>
       <div className="bg-slate-800 h-[10vh]"></div>

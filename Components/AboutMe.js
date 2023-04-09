@@ -20,10 +20,12 @@ export default function AboutMe() {
         <h3 className="font-thin text-center">About Me</h3>
         <div className="grid place-items-center space-y-4">
           <p className="font-thin leading-10 text-justify">
-            Previously, I was working in IT consultant for 2 years as Fullstack
-            developer using Flutter and ASP .NET Core, but right now I want to
-            transition as Frontend Developer. I love building beautiful UI/UX
-            for web and soon learning Typescript, React Native and Next.js.
+            I am a highly motivated and results-driven individual with a 3.57
+            GPA and two years of experience as a fullstack developer. While I
+            have enjoyed working on both the front-end and back-end of web
+            development projects, I have recently discovered a strong passion
+            for frontend development. The wide information of Frontend
+            Technologies makes me want to discover more.
           </p>
         </div>
       </div>

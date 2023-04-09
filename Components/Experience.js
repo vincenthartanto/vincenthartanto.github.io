@@ -8,7 +8,7 @@ export default function Experience() {
   const width = useWindow();
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["center", "start"],
+    offset: ["end", "start"],
   });
 
   const mobile = useScroll({
@@ -36,7 +36,7 @@ export default function Experience() {
               place={" @Accelist Lentera Indonesia"}
               subtitle={"2020-2021 | Tangerang Selatan"}
               description={
-                "    Creating Mobile Hospital App named telemedik with Flutter and ASP .NET Core. Features include: Booking Hospital, Locate NearbyHospital, Video call with doctor , buying medicine, alarm medicine and etc"
+                "Creating Mobile Hospital App named telemedik with Flutter and ASP .NET Core. Features include: Booking Hospital, Locate NearbyHospital, Video call with doctor , buying medicine, alarm medicine and etc"
               }
             ></Details>
           </div>
