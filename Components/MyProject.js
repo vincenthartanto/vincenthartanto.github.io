@@ -33,10 +33,10 @@ export default function MyProject() {
           fromLeft={false}
         ></DetailProject>
         <DetailProject
-          linkPage="https://entertainment-web-4z0vke25l-vincenthartanto.vercel.app/"
+          linkPage="https://entertainment-web-m67xge728-vincenthartanto.vercel.app/"
           img={EntertainmentWebProject}
           title={"Entertainment Web App"}
-          description={"Fully Responsive Movie App with TMDB API "}
+          description={"Fully Responsive Movie Trailer Web App with"}
           firstTech={"ReactJS"}
           SecondTech={"Tailwind CSS"}
           fromLeft={false}
