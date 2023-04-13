@@ -8,18 +8,19 @@ export default function Experience() {
   const width = useWindow();
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start", "end"],
   });
 
   const mobile = useScroll({
     target: ref,
-    offset: ["center", "end"],
   });
 
   return (
-    <div ref={ref} className="p-4 border-b space-y-4   overflow-hidden">
+    <div className="p-4 border-b space-y-4   overflow-hidden h-full">
       <h3 className="text-center">Experience</h3>
-      <div className="flex justify-around items-center relative space-x-4">
+      <div
+        ref={ref}
+        className="flex justify-around items-center relative space-x-4"
+      >
         <motion.div
           style={{
             scaleY: scrollYProgress,
@@ -28,6 +29,7 @@ export default function Experience() {
         >
           {" "}
         </motion.div>
+        {console.log(scrollYProgress)}
         <div className="md:flex md:flex-col md:p-20 h-full md:items-center justify-center ">
           <div className="flex md:w-[50vw] items-center relative">
             <LineYear year={"1"} sup={"st"}></LineYear>
