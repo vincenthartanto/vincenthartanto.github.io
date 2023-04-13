@@ -23,21 +23,23 @@ export default function DetailProject({
       initial="initial"
       whileInView="whileInView"
       viewport="viewport"
-      className="space-y-4 border-b p-4 md:max-w-[80vh]"
+      className="space-y-4 border-b p-4 md:max-w-[80vh] flex flex-col justify-between"
     >
       <div className="border-b p-4">
         <Image src={img}></Image>
       </div>
       <h3 className="text-center">{title}</h3>
-      <p className="opacity-70 leading-8 font-extralight">
+      <p className="opacity-70 leading-8 font-extralight h-[30%]">
         {description} &nbsp;
         <span className="text-cyan-800 font-bold underline">{firstTech}</span>
         &nbsp; and &nbsp;
         <span className="text-cyan-800 font-bold underline">{SecondTech}</span>
       </p>
-      <a href={linkPage} target="_blank">
-        <MinimalistButton title={"SEE IT LIVE"}></MinimalistButton>
-      </a>
+      <div className="">
+        <a className="" href={linkPage} target="_blank">
+          <MinimalistButton title={"SEE IT LIVE"}></MinimalistButton>
+        </a>
+      </div>
     </motion.div>
   );
 }

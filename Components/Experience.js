@@ -8,12 +8,7 @@ export default function Experience() {
   const width = useWindow();
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["end", "start"],
-  });
-
-  const mobile = useScroll({
-    target: ref,
-    offset: ["center", "end"],
+    offset: ["start"],
   });
 
   return (
@@ -22,7 +17,7 @@ export default function Experience() {
       <div className="flex justify-around items-center relative space-x-4">
         <motion.div
           style={{
-            scaleY: width > 768 ? scrollYProgress : mobile.scrollYProgress,
+            scaleY: scrollYProgress,
           }}
           className=" origin-top w-[4px] bg-green-500 absolute -left-0 md:left-[25%] h-[80%]  mt-4"
         >
