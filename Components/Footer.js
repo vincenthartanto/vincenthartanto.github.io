@@ -5,7 +5,7 @@ import { fromBottomAnimation } from "@/Animation/AnimationList";
 export default function Footer() {
   return (
     <footer className="space-y-8">
-      <div className="grid place-items-center ">
+      <div className="grid place-items-center py-12">
         <motion.div
           variants={fromBottomAnimation}
           initial="initial"

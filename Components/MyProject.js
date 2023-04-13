@@ -3,6 +3,7 @@ import React from "react";
 import KanbanProject from "../public/KanbanProject.jpg";
 import Audiophile from "../public/Audiophile.jpg";
 import DetailProject from "./DetailProject";
+import EntertainmentWebProject from "../public/EntertainmentWebApp.jpg";
 import useWindow from "@/Hooks/useWindow";
 export default function MyProject() {
   return (
@@ -27,6 +28,15 @@ export default function MyProject() {
           description={
             "Fully responsive E-commerce headphone website built with "
           }
+          firstTech={"ReactJS"}
+          SecondTech={"Tailwind CSS"}
+          fromLeft={false}
+        ></DetailProject>
+        <DetailProject
+          linkPage="https://entertainment-web-4z0vke25l-vincenthartanto.vercel.app/"
+          img={EntertainmentWebProject}
+          title={"Entertainment Web App"}
+          description={"Fully Responsive Movie App with TMDB API "}
           firstTech={"ReactJS"}
           SecondTech={"Tailwind CSS"}
           fromLeft={false}
