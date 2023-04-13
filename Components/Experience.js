@@ -6,13 +6,6 @@ import useWindow from "@/Hooks/useWindow";
 export default function Experience() {
   const ref = useRef(null);
   const width = useWindow();
-  const { scrollYProgress } = useScroll({
-    target: ref,
-  });
-
-  const mobile = useScroll({
-    target: ref,
-  });
 
   return (
     <div className="p-4 border-b space-y-4   overflow-hidden h-full">
@@ -21,15 +14,6 @@ export default function Experience() {
         ref={ref}
         className="flex justify-around items-center relative space-x-4"
       >
-        <motion.div
-          style={{
-            scaleY: scrollYProgress,
-          }}
-          className=" origin-top w-[4px] bg-green-500 absolute -left-0 md:left-[25%] h-[80%]  mt-4"
-        >
-          {" "}
-        </motion.div>
-        {console.log(scrollYProgress)}
         <div className="md:flex md:flex-col md:p-20 h-full md:items-center justify-center ">
           <div className="flex md:w-[50vw] items-center relative">
             <LineYear year={"1"} sup={"st"}></LineYear>
