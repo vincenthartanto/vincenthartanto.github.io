@@ -8,7 +8,12 @@ export default function Experience() {
   const width = useWindow();
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start"],
+    offset: ["start", "end"],
+  });
+
+  const mobile = useScroll({
+    target: ref,
+    offset: ["center", "end"],
   });
 
   return (
