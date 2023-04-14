@@ -23,7 +23,7 @@ export default function MyProject() {
           fromLeft={true}
         ></DetailProject>
         <DetailProject
-          linkPage=""
+          linkPage="https://audiophile-app-nine.vercel.app/"
           img={Audiophile}
           title={"Audiophiles"}
           description={
@@ -45,7 +45,7 @@ export default function MyProject() {
         <DetailProject
           linkPage="https://url-shortening-website.vercel.app/"
           img={UrlShorteningWeb}
-          title={"Url Shortening Web APp"}
+          title={"Url Shortening Web App"}
           description={
             "Fully Responsive Url Shortening API, users can shorten their favorite link! built with "
           }
