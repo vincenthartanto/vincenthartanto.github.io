@@ -12,7 +12,7 @@ export default function MyProject() {
       <h3 className="text-center">My Project</h3>
       <div className="grid grid-cols-3 gap-4">
         <DetailProject
-          linkPage="kanban-web-app.vercel.app"
+          linkPage="https://kanban-web-app.vercel.app/"
           img={KanbanProject}
           title={"Kanban Web App"}
           description={
@@ -34,7 +34,7 @@ export default function MyProject() {
           fromLeft={false}
         ></DetailProject>
         <DetailProject
-          linkPage="entertainment-web-app-alpha-eight.vercel.app"
+          linkPage="https://entertainment-web-app-alpha-eight.vercel.app/"
           img={EntertainmentWebProject}
           title={"Entertainment Web App"}
           description={"Fully Responsive Movie Trailer Web App with"}
@@ -43,7 +43,7 @@ export default function MyProject() {
           fromLeft={false}
         ></DetailProject>
         <DetailProject
-          linkPage="url-shortening-website.vercel.app"
+          linkPage="https://url-shortening-website.vercel.app/"
           img={UrlShorteningWeb}
           title={"Url Shortening Web APp"}
           description={
