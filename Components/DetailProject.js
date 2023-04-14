@@ -25,8 +25,8 @@ export default function DetailProject({
       viewport="viewport"
       className="space-y-4 border-b p-4 md:max-w-[80vh] flex flex-col justify-between"
     >
-      <div className="border-b p-4">
-        <Image src={img}></Image>
+      <div className="border-b p-4 h-[18rem]">
+        <Image className="h-full w-full object-contain" src={img}></Image>
       </div>
       <h3 className="text-center">{title}</h3>
       <p className="opacity-70 leading-8 font-extralight h-[30%]">
