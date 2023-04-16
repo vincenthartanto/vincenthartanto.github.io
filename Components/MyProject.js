@@ -10,7 +10,7 @@ export default function MyProject() {
   return (
     <div className="p-4  space-y-4 ">
       <h3 className="text-center">My Project</h3>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <DetailProject
           linkPage="https://kanban-web-app.vercel.app/"
           img={KanbanProject}
