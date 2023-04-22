@@ -35,9 +35,9 @@ export default function DetailProject({
       <p className="opacity-70 leading-8 font-extralight h-[30%]">
         {description} &nbsp;
         <span className="text-cyan-800 font-bold underline">{firstTech}</span>
-        &nbsp; and &nbsp;
+        &nbsp; &nbsp;
         <span className="text-cyan-800 font-bold underline">{SecondTech}</span>
-        &nbsp; and &nbsp;
+        &nbsp; &nbsp;
         <span className="text-cyan-800 font-bold underline">{thirdTech}</span>
         {title === "Invoice Firebase App" && (
           <div>
