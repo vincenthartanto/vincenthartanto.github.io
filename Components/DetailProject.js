@@ -13,8 +13,10 @@ export default function DetailProject({
   description,
   firstTech,
   SecondTech,
+  thirdTech,
   fromLeft,
   linkPage,
+  msg,
 }) {
   const width = useWindow();
   return (
@@ -29,11 +31,30 @@ export default function DetailProject({
         <Image className="h-full w-full object-contain" src={img}></Image>
       </div>
       <h3 className="text-center">{title}</h3>
+
       <p className="opacity-70 leading-8 font-extralight h-[30%]">
         {description} &nbsp;
         <span className="text-cyan-800 font-bold underline">{firstTech}</span>
         &nbsp; and &nbsp;
         <span className="text-cyan-800 font-bold underline">{SecondTech}</span>
+        &nbsp; and &nbsp;
+        <span className="text-cyan-800 font-bold underline">{thirdTech}</span>
+        {title === "Invoice Firebase App" && (
+          <div>
+            <p>To use the app, you need to login first</p>
+            <p> Login Credential:</p>
+            <p>
+              Email:{" "}
+              <span className="text-cyan-800 font-bold underline">
+                admin@invoice.com
+              </span>
+            </p>
+            <p>
+              password:{" "}
+              <span className="text-cyan-800 font-bold underline">123456</span>
+            </p>
+          </div>
+        )}
       </p>
       <div className="">
         <a className="" href={linkPage} target="_blank">

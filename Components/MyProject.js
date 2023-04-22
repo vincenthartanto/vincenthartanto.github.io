@@ -5,6 +5,7 @@ import Audiophile from "../public/Audiophile.jpg";
 import DetailProject from "./DetailProject";
 import EntertainmentWebProject from "../public/EntertainmentWebApp.jpg";
 import useWindow from "@/Hooks/useWindow";
+import InvoiceApp from "../public/invoice-app.jpg";
 import UrlShorteningWeb from "../public/UrlShorteningWeb.jpg";
 export default function MyProject() {
   return (
@@ -22,6 +23,18 @@ export default function MyProject() {
           SecondTech={"Tailwind CSS"}
           fromLeft={true}
         ></DetailProject>
+
+        <DetailProject
+          linkPage="https://invoice-app-firebase.vercel.app/"
+          img={InvoiceApp}
+          title={"Invoice Firebase App"}
+          description={"Fully Resposive Invoice Web App with"}
+          firstTech={"ReactJS"}
+          SecondTech={"Tailwind CSS"}
+          thirdTech={"Firebase"}
+          fromLeft={false}
+        ></DetailProject>
+
         <DetailProject
           linkPage="https://audiophile-app-nine.vercel.app/"
           img={Audiophile}
@@ -42,6 +55,7 @@ export default function MyProject() {
           SecondTech={"Tailwind CSS"}
           fromLeft={false}
         ></DetailProject>
+
         <DetailProject
           linkPage="https://url-shortening-website.vercel.app/"
           img={UrlShorteningWeb}
