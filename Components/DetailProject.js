@@ -18,7 +18,6 @@ export default function DetailProject({
   linkPage,
   msg,
 }) {
-  const width = useWindow();
   return (
     <motion.div
       variants={fromLeftAnimation}
@@ -44,13 +43,13 @@ export default function DetailProject({
             <p>To use the app, you need to login first</p>
             <p> Login Credential:</p>
             <p>
-              Email:{" "}
+              Email:
               <span className="text-cyan-800 font-bold underline">
                 admin@invoice.com
               </span>
             </p>
             <p>
-              password:{" "}
+              password:
               <span className="text-cyan-800 font-bold underline">123456</span>
             </p>
           </div>
